@@ -1,0 +1,459 @@
+/* General Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  animation: gradientAnimation 10s ease infinite; /* Apply background animation */
+}
+
+/* Background Gradient Animation */
+@keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(135deg, #ff7043, #ff5722); /* Original colors */
+  }
+  25% {
+    background: linear-gradient(135deg, #ff7043, #f44336); /* Red tones */
+  }
+  50% {
+    background: linear-gradient(135deg, #3f51b5, #2196f3); /* Blue tones */
+  }
+  75% {
+    background: linear-gradient(135deg, #8e24aa, #ff4081); /* Pink tones */
+  }
+  100% {
+    background: linear-gradient(135deg, #ff7043, #ff5722); /* Back to original */
+  }
+}
+
+/* Page Load Animation */
+@keyframes pageLoad {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+body {
+  animation: pageLoad 1s ease-out forwards;
+  color: #fff;
+  background: linear-gradient(135deg, #ff7043, #ff5722); /* Initial background gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+/* Logo Animation */
+@keyframes logoEntrance {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.logo-container {
+  animation: logoEntrance 1.5s ease-out;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Logo text styling */
+.logo {
+  display: inline-block;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo i {
+  font-size: 40px;
+  margin-right: 10px;
+  color: #ffdd57; /* Vibrant color for the icon */
+  animation: iconColorChange 1.5s ease-out infinite alternate;
+}
+
+/* Brand Name Animation */
+@keyframes brandNameAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+    color: #ff7043;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    color: #2c3e50; /* Dark greyish blue for the brand name */
+  }
+}
+
+.brand-name {
+  font-size: 36px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  animation: brandNameAnimation 1.5s ease-out forwards;
+  color: #2c3e50; /* Dark greyish blue for better contrast */
+}/* General Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  animation: gradientAnimation 10s ease infinite; /* Apply background animation */
+}
+
+/* Background Gradient Animation */
+@keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(135deg, #ff7043, #ff5722); /* Original colors */
+  }
+  25% {
+    background: linear-gradient(135deg, #ff7043, #f44336); /* Red tones */
+  }
+  50% {
+    background: linear-gradient(135deg, #3f51b5, #2196f3); /* Blue tones */
+  }
+  75% {
+    background: linear-gradient(135deg, #8e24aa, #ff4081); /* Pink tones */
+  }
+  100% {
+    background: linear-gradient(135deg, #ff7043, #ff5722); /* Back to original */
+  }
+}
+
+/* Page Load Animation */
+@keyframes pageLoad {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+body {
+  animation: pageLoad 1s ease-out forwards;
+  color: #fff;
+  background: linear-gradient(135deg, #ff7043, #ff5722); /* Initial background gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+/* Logo Animation */
+@keyframes logoEntrance {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.logo-container {
+  animation: logoEntrance 1.5s ease-out;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Logo text styling */
+.logo {
+  display: inline-block;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo i {
+  font-size: 40px;
+  margin-right: 10px;
+  color: #ffdd57;
+  animation: iconColorChange 1.5s ease-out infinite alternate;
+}
+
+/* Brand Name Animation */
+@keyframes brandNameAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+    color: #ff7043; /* Original color */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    color: #2c3e50; /* Dark color for brand name */
+  }
+}
+
+.brand-name {
+  font-size: 36px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  animation: brandNameAnimation 1.5s ease-out forwards;
+  color: #2c3e50; /* Dark color for the brand name */
+}
+
+/* Tagline Animation */
+@keyframes taglineAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+    color: #ff5722; /* Original color */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    color: #7f8c8d; /* Dark grey color for tagline */
+  }
+}
+
+.tagline {
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  animation: taglineAnimation 1.5s ease-out forwards;
+  color: #7f8c8d; /* Dark grey color for tagline */
+}
+
+/* Input Field Styling */
+input[type="text"] {
+  padding: 15px;
+  font-size: 18px;
+  color: #333333; /* Darker text color */
+  border: 2px solid #d1d8e0;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #f4f6fa;
+}
+
+input[type="text"]:focus {
+  border-color: #ff7043;
+  box-shadow: 0 0 10px rgba(255, 112, 67, 0.3);
+  background-color: #fff;
+}
+
+input[type="text"]::placeholder {
+  color: #aaa;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Button Styling */
+button {
+  padding: 14px 22px;
+  background-color: #ff7043;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #e64a19;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  animation: bounce 0.5s ease-in-out;
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Section Styling */
+section {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 2px solid #eee;
+}
+
+section p {
+  font-size: 16px;
+  color: #7f8c8d; /* Dark grey text color */
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+  main {
+    width: 90%;
+    padding: 20px;
+  }
+
+  input[type="text"], button {
+    font-size: 16px;
+  }
+}
+
+/* Tagline Animation */
+@keyframes taglineAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+    color: #ff5722;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    color: #34495e; /* Dark grey for the tagline */
+  }
+}
+
+.tagline {
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  animation: taglineAnimation 1.5s ease-out forwards;
+  color: #34495e; /* Dark grey for tagline */
+}
+
+/* Input Field Styling */
+input[type="text"] {
+  padding: 15px;
+  font-size: 18px;
+  color: #333333; /* Dark grey color for input text */
+  border: 2px solid #d1d8e0;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #f4f6fa; /* Light background for input */
+}
+
+input[type="text"]:focus {
+  border-color: #ff7043;
+  box-shadow: 0 0 10px rgba(255, 112, 67, 0.3);
+  background-color: #fff;
+}
+
+input[type="text"]::placeholder {
+  color: #aaa;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Button Styling */
+button {
+  padding: 14px 22px;
+  background-color: #ff7043;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #e64a19;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  animation: bounce 0.5s ease-in-out;
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Section Styling */
+section {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 2px solid #eee;
+}
+
+section p {
+  font-size: 16px;
+  color: #34495e; /* Dark grey for better text visibility */
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+  main {
+    width: 90%;
+    padding: 20px;
+  }
+
+  input[type="text"], button {
+    font-size: 16px;
+  }
+}
+
+
